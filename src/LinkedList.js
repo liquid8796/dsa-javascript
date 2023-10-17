@@ -70,8 +70,8 @@ class LinkedList {
 
     shift() {
         if (!this.head) {
-            this.head = newNode;
-            this.tail = newNode;
+            this.head = null;
+            this.tail = null;
         } else {
             newNode.next = this.head;
             this.head = newNode;
