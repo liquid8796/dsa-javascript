@@ -52,6 +52,13 @@ class LinkedList {
 
         return temp;
     }
+
+    unshift(value) {
+        const newNode = new Node(value);
+
+        newNode.next = this.head;
+        this.head = newNode;
+    }
 }
 
 let myLinkedList = new LinkedList(7);
