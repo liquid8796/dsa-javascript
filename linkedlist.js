@@ -19,10 +19,9 @@ class LinkedList {
         if (!this.head) {
             this.head = new Node(value);
             this.tail = new Node(value);
-            this.length = 1;
         } else {
             this.tail.next = newNode;
-            this.tail = this.tail.next;
+            this.tail = newNode;
         }
     }
 }
