@@ -8,5 +8,8 @@ class Node {
 class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
+        this.head = newNode;
+        this.tail = head;
+        this.length = 1;
     }
 }
