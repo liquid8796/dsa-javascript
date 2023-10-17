@@ -87,7 +87,6 @@ class LinkedList {
 }
 
 let myLinkedList = new LinkedList(2);
-myLinkedList.push(3);
-myLinkedList.unshift(1);
+myLinkedList.shift(1);
 
 console.log(myLinkedList);
