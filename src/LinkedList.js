@@ -70,9 +70,9 @@ class LinkedList {
 
     shift() {
         if (!this.head) {
-            this.head = null;
-            this.tail = null;
+            return undefined;
         }
+
         this.length--;
 
         return this;
