@@ -67,4 +67,4 @@ class LinkedList {
 let myLinkedList = new LinkedList(7);
 myLinkedList.push(4);
 
-console.log(myLinkedList.unshift());
+console.log(myLinkedList.unshift(1));
