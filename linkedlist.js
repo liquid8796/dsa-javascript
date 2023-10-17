@@ -14,12 +14,12 @@ class LinkedList {
     }
 
     push(value) {
+        const newNode = new Node(value);
         if (this.length === 0) {
             this.head = new Node(value);
             this.tail = this.head;
             this.length = 1;
         } else {
-            const newNode = new Node(value);
             this.tail.next = newNode;
             this.tail = this.tail.next;
         }
