@@ -9,7 +9,7 @@ class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
         this.head = newNode;
-        this.tail = head;
+        this.tail = this.head;
         this.length = 1;
     }
 }
