@@ -65,7 +65,8 @@ class LinkedList {
     }
 }
 
-let myLinkedList = new LinkedList(7);
-myLinkedList.pop();
+let myLinkedList = new LinkedList(2);
+myLinkedList.push(3);
+myLinkedList.unshift(1);
 
 console.log(myLinkedList.unshift(1));
