@@ -30,7 +30,7 @@ class LinkedList {
 
     pop() {
         if (!this.head) {
-            return this;
+            return undefined;
         }
 
         if (this.head === this.tail) {
@@ -40,7 +40,7 @@ class LinkedList {
             const temp = this.head;
             const pre = null;
 
-            while (!temp) {
+            while (!temp.ext) {
                 pre = temp;
                 temp = temp.next;
             }
