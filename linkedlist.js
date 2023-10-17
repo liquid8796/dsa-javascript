@@ -13,10 +13,11 @@ class LinkedList {
     }
 
     push(value) {
-        if (this.length === 0) {
+        if (!this.length) {
             this.head = new Node(value);
             this.tail = this.head;
             this.length = 1;
+        } else {
         }
     }
 }
