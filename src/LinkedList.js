@@ -75,7 +75,7 @@ class LinkedList {
 
         let temp = this.head;
         this.head = this.head.next;
-        this.temp.next = null;
+        temp.next = null;
         this.length--;
 
         if (this.length === 0) {
