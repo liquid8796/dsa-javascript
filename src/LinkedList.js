@@ -58,6 +58,7 @@ class LinkedList {
 
         newNode.next = this.head;
         this.head = newNode;
+        this.tail = newNode;
         this.length++;
 
         return this;
