@@ -13,3 +13,5 @@ class LinkedList {
         this.length = 1;
     }
 }
+
+let myLinkedList = new LinkedList(4);
