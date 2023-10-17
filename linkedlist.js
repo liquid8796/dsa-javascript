@@ -40,7 +40,7 @@ class LinkedList {
             let temp = this.head;
             let pre = null;
 
-            while (!temp.next) {
+            while (temp.next) {
                 pre = temp;
                 temp = temp.next;
             }
