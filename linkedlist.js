@@ -7,7 +7,8 @@ class Node {
 
 class LinkedList {
     constructor(value) {
-        this.head = new Node(value);
+        const newNode = new Node(value);
+        this.head = newNode;
         this.tail = this.head;
         this.length = 1;
     }
@@ -18,6 +19,9 @@ class LinkedList {
             this.tail = this.head;
             this.length = 1;
         } else {
+            const newNode = new Node(value);
+            this.tail.next = newNode;
+            this.tail = new Node(value);
         }
     }
 }
