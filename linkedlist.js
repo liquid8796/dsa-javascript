@@ -38,7 +38,7 @@ class LinkedList {
             this.tail = null;
         } else {
             const temp = this.head;
-            const pre = null;
+            const pre = this.head;
 
             while (!temp.next) {
                 pre = temp;
