@@ -69,4 +69,4 @@ let myLinkedList = new LinkedList(2);
 myLinkedList.push(3);
 myLinkedList.unshift(1);
 
-console.log(myLinkedList);
+console.log(myLinkedList.tail);
