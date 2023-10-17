@@ -25,7 +25,7 @@ class LinkedList {
         }
         this.length++;
 
-        return temp;
+        return this;
     }
 
     pop() {
@@ -50,7 +50,7 @@ class LinkedList {
             this.tail = null;
         }
 
-        return this;
+        return temp;
     }
 }
 
