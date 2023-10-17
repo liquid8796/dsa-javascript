@@ -58,6 +58,8 @@ class LinkedList {
 
         newNode.next = this.head;
         this.head = newNode;
+
+        return this;
     }
 }
 
