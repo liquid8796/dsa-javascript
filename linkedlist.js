@@ -50,7 +50,7 @@ class LinkedList {
             this.tail = null;
         }
 
-        return this;
+        return temp;
     }
 }
 
