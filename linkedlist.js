@@ -29,5 +29,5 @@ class LinkedList {
     }
 }
 
-let myLinkedList = new LinkedList(4);
-console.log(myLinkedList);
+let myLinkedList = new LinkedList(7);
+console.log(myLinkedList.push(4));
