@@ -11,6 +11,14 @@ class LinkedList {
         this.tail = this.head;
         this.length = 1;
     }
+
+    push(value) {
+        if (this.length === 0) {
+            this.head = new Node(value);
+            this.tail = this.head;
+            this.length = 1;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(4);
