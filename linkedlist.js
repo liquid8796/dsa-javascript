@@ -28,12 +28,10 @@ class LinkedList {
         return this;
     }
 
-    pop(value) {
+    pop() {
         if (!this.head) {
             return this;
         }
-
-        const newNode = new Node(value);
 
         if (this.head === this.tail) {
             this.head = null;
@@ -46,6 +44,9 @@ class LinkedList {
                 pre = temp;
                 temp = temp.next;
             }
+
+            temp.next = newNode;
+            pre = temp;
         }
         this.length--;
 
