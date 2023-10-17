@@ -45,8 +45,7 @@ class LinkedList {
                 temp = temp.next;
             }
 
-            temp.next = newNode;
-            pre = temp;
+            this.tail = pre;
         }
         this.length--;
 
@@ -55,4 +54,6 @@ class LinkedList {
 }
 
 let myLinkedList = new LinkedList(7);
-console.log(myLinkedList.push(4));
+myLinkedList.push(4);
+
+console.log(myLinkedList);
