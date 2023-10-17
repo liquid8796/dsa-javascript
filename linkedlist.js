@@ -31,8 +31,18 @@ class LinkedList {
     pop(value) {
         if (!this.head) {
             return this;
-        } else if (this.head === this.tail) {
         }
+
+        const newNode = new Node(value);
+
+        if (this.head === this.tail) {
+            this.head = null;
+            this.tail = null;
+        } else {
+        }
+        this.length--;
+
+        return this;
     }
 }
 
