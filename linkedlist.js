@@ -13,7 +13,7 @@ class LinkedList {
     }
 
     push(value) {
-        if (!this.length) {
+        if (this.length === 0) {
             this.head = new Node(value);
             this.tail = this.head;
             this.length = 1;
