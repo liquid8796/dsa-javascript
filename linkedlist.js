@@ -31,6 +31,7 @@ class LinkedList {
     pop(value) {
         if (!this.head) {
             return this;
+        } else if (this.head === this.tail) {
         }
     }
 }
