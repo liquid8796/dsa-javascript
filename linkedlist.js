@@ -21,7 +21,7 @@ class LinkedList {
         } else {
             const newNode = new Node(value);
             this.tail.next = newNode;
-            this.tail = new Node(value);
+            this.tail = this.tail.next;
         }
     }
 }
