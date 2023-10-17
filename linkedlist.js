@@ -27,6 +27,12 @@ class LinkedList {
 
         return this;
     }
+
+    pop(value) {
+        if (!this.head) {
+            return this;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(7);
