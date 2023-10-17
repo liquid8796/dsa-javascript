@@ -15,3 +15,4 @@ class LinkedList {
 }
 
 let myLinkedList = new LinkedList(4);
+console.log(myLinkedList);
