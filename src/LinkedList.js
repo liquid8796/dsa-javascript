@@ -103,4 +103,4 @@ let myLinkedList = new LinkedList(2);
 myLinkedList.push(1);
 myLinkedList.push(3);
 
-console.log(myLinkedList.get(1));
+console.log(myLinkedList.get(2));
