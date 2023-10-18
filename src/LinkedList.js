@@ -116,4 +116,4 @@ myLinkedList.push(23);
 myLinkedList.push(7);
 
 console.log(myLinkedList.set(2, 5));
-console.log(myLinkedList);
+console.log(myLinkedList.get(2));
