@@ -85,7 +85,11 @@ class LinkedList {
         return temp;
     }
 
-    get(index) {}
+    get(index) {
+        if (index < 0 || index >= this.length) {
+            return undefined;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(2);
