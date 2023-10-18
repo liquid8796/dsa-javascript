@@ -98,7 +98,9 @@ class LinkedList {
         return temp;
     }
 
-    set(index, value) {}
+    set(index, value) {
+        
+    }
 }
 
 let myLinkedList = new LinkedList(2);
