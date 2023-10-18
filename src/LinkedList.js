@@ -110,8 +110,9 @@ class LinkedList {
 	}
 }
 
-let myLinkedList = new LinkedList(2);
-myLinkedList.push(1);
+let myLinkedList = new LinkedList(11);
 myLinkedList.push(3);
+myLinkedList.push(23);
+myLinkedList.push(7);
 
-console.log(myLinkedList.get(-1));
+console.log(myLinkedList);
