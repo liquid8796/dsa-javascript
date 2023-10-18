@@ -91,7 +91,7 @@ class LinkedList {
         }
 
         let temp = this.head;
-        for (let i = 0; i < index; index++) {
+        for (let i = 0; i < index; i++) {
             temp = temp.next;
         }
 
