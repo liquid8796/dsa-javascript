@@ -86,6 +86,10 @@ class LinkedList {
     }
 }
 
+get(index) {
+    
+}
+
 let myLinkedList = new LinkedList(2);
 myLinkedList.push(1);
 myLinkedList.shift();
