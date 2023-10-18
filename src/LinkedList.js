@@ -91,10 +91,11 @@ class LinkedList {
         }
 
         let temp = this.head;
-
         for (let i = 0; i < index; index++) {
             temp = temp.next;
         }
+
+        return temp;
     }
 }
 
