@@ -84,10 +84,8 @@ class LinkedList {
 
         return temp;
     }
-}
 
-get(index) {
-    
+    get(index) {}
 }
 
 let myLinkedList = new LinkedList(2);
