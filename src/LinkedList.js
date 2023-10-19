@@ -155,3 +155,5 @@ let myLinkedList = new LinkedList(11);
 myLinkedList.push(3);
 myLinkedList.push(23);
 myLinkedList.push(7);
+
+console.log(myLinkedList);
