@@ -129,6 +129,18 @@ class LinkedList {
 
         return true;
     }
+
+    remove(index) {
+        if (index === 0) {
+            return this.shift();
+        }
+        if (index === this.length - 1) {
+            return this.pop();
+        }
+        if (index < 0 || index >= this.length) {
+            return undefined;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(0);
