@@ -134,4 +134,4 @@ class LinkedList {
 let myLinkedList = new LinkedList(0);
 myLinkedList.push(2);
 
-console.log(myLinkedList.get(2));
+console.log(myLinkedList.get(1));
