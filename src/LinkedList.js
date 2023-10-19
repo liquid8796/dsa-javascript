@@ -133,8 +133,3 @@ class LinkedList {
 
 let myLinkedList = new LinkedList(0);
 myLinkedList.push(2);
-
-console.log(myLinkedList.get(1));
-myLinkedList.insert(1, 5);
-console.log(myLinkedList.get(1));
-console.log(myLinkedList.get(0));
