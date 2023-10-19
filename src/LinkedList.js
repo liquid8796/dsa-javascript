@@ -157,4 +157,4 @@ myLinkedList.push(23);
 myLinkedList.push(7);
 myLinkedList.remove(2);
 
-console.log(myLinkedList);
+console.log(myLinkedList.get(0));
