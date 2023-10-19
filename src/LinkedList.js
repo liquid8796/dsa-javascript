@@ -140,6 +140,9 @@ class LinkedList {
         if (index < 0 || index >= this.length) {
             return undefined;
         }
+
+        const before = this.get(index - 1);
+        const temp = before.next;
     }
 }
 
