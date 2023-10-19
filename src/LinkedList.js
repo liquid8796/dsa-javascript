@@ -144,6 +144,8 @@ class LinkedList {
         const before = this.get(index - 1);
         const temp = before.next;
         before.next = temp.next;
+
+        return true;
     }
 }
 
