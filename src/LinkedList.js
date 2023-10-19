@@ -151,5 +151,7 @@ class LinkedList {
     }
 }
 
-let myLinkedList = new LinkedList(0);
-myLinkedList.push(2);
+let myLinkedList = new LinkedList(11);
+myLinkedList.push(3);
+myLinkedList.push(23);
+myLinkedList.push(7);
