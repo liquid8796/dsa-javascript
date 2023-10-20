@@ -154,6 +154,8 @@ class LinkedList {
         let temp = this.head;
         this.head = this.tail;
         this.tail = temp;
+        let next = temp.next;
+        let prev = null;
     }
 }
 
