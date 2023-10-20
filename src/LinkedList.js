@@ -149,6 +149,12 @@ class LinkedList {
 
         return temp;
     }
+
+    reverse() {
+        let temp = this.head;
+        this.head = this.tail;
+        this.tail = temp;
+    }
 }
 
 let myLinkedList = new LinkedList(11);
