@@ -53,6 +53,16 @@ class LinkedList {
 		}
 	}
 
+	getLength() {
+		let temp = this.head;
+		let length = 0;
+
+		while (temp != null) {
+			temp = temp.next;
+			length++;
+		}
+	}
+
 	findMiddleNode() {}
 }
 
