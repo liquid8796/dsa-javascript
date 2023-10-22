@@ -70,6 +70,10 @@ class LinkedList {
 
 	findMiddleNode() {
 		const length = this.getLength();
+
+		if (length === 0) {
+			return null;
+		}
 	}
 }
 
