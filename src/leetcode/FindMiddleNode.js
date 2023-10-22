@@ -72,24 +72,11 @@ myLinkedList.push(3);
 myLinkedList.push(4);
 myLinkedList.push(5);
 myLinkedList.push(6);
+myLinkedList.push(7);
+myLinkedList.push(8);
 
 console.log('Original list:');
 myLinkedList.printList();
 
 const middleNode = myLinkedList.findMiddleNode();
 console.log(`\nMiddle node value: ${middleNode.value}`);
-
-// Create a new list with an even number of elements
-let myLinkedList2 = new LinkedList(1);
-myLinkedList2.push(2);
-myLinkedList2.push(3);
-myLinkedList2.push(4);
-myLinkedList2.push(5);
-myLinkedList2.push(6);
-myLinkedList2.push(7);
-
-console.log('\nOriginal list 2:');
-myLinkedList2.printList();
-
-const middleNode2 = myLinkedList2.findMiddleNode();
-console.log(`\nMiddle node value of list 2: ${middleNode2.value}`);
