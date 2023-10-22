@@ -75,7 +75,7 @@ class LinkedList {
 			return null;
 		}
 
-		const middle = Math.floor(n / 2);
+		const middle = Math.floor(length / 2);
 		let temp = this.head;
 		for (let i = 0; i < middle; i++) {
 			temp = temp.next;
