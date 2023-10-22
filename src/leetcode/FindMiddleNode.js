@@ -59,6 +59,7 @@ class LinkedList {
 
 		while (fast !== null && fast.next !== null) {
 			slow = slow.next;
+			console.log(slow);
 			fast = fast.next.next;
 		}
 
