@@ -61,6 +61,8 @@ class LinkedList {
 			temp = temp.next;
 			length++;
 		}
+
+		return length;
 	}
 
 	findMiddleNode() {}
