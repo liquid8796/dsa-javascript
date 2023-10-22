@@ -68,7 +68,9 @@ class LinkedList {
 		return length;
 	}
 
-	findMiddleNode() {}
+	findMiddleNode() {
+		const length = this.getLength();
+	}
 }
 
 let myLinkedList = new LinkedList(1);
