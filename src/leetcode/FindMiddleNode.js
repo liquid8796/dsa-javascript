@@ -104,23 +104,3 @@ myLinkedList2.printList();
 
 const middleNode2 = myLinkedList2.findMiddleNode();
 console.log(`\nMiddle node value of list 2: ${middleNode2.value}`);
-
-/*
-    EXPECTED OUTPUT:
-    ----------------
-    Original list:
-    1
-    2
-    3
-    4
-    5
-    Middle node value: 3
-    Original list 2:
-    1
-    2
-    3
-    4
-    5
-    6
-    Middle node value of list 2: 4
-*/
