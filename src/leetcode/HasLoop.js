@@ -59,7 +59,10 @@ class LinkedList {
 		this.length++;
 	}
 
-	hasLoop() {}
+	hasLoop() {
+		const temp = this.head;
+		temp.next = null;
+	}
 }
 
 let myLinkedList = new LinkedList(1);
