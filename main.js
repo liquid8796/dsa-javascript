@@ -54,6 +54,9 @@ class LinkedList {
 	}
 
 	getLength() {
+		if (!this.head) {
+			return 0;
+		}
 		let temp = this.head;
 		let length = 0;
 
