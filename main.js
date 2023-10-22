@@ -75,9 +75,11 @@ class LinkedList {
 			return null;
 		}
 
-		const middle = Math.round(n / 2);
+		const middle = Math.floor(n / 2);
 		const temp = this.head;
-		for (let i = 0; i < middle; i++) {}
+		for (let i = 0; i < middle; i++) {
+			temp = temp.next;
+		}
 	}
 }
 
