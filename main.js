@@ -53,12 +53,7 @@ class LinkedList {
 		}
 	}
 
-	// WRITE THE FINDMIDDLENODE METHOD HERE //
-	//                                      //
-	//                                      //
-	//                                      //
-	//                                      //
-	//////////////////////////////////////////
+	findMiddleNode() {}
 }
 
 let myLinkedList = new LinkedList(1);
