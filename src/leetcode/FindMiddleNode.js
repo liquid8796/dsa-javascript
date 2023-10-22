@@ -67,11 +67,11 @@ class LinkedList {
 }
 
 let myLinkedList = new LinkedList(1);
-myLinkedList2.push(2);
-myLinkedList2.push(3);
-myLinkedList2.push(4);
-myLinkedList2.push(5);
-myLinkedList2.push(6);
+myLinkedList.push(2);
+myLinkedList.push(3);
+myLinkedList.push(4);
+myLinkedList.push(5);
+myLinkedList.push(6);
 
 console.log('Original list:');
 myLinkedList.printList();
