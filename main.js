@@ -76,10 +76,12 @@ class LinkedList {
 		}
 
 		const middle = Math.floor(n / 2);
-		const temp = this.head;
+		let temp = this.head;
 		for (let i = 0; i < middle; i++) {
 			temp = temp.next;
 		}
+
+		return temp;
 	}
 }
 
