@@ -53,21 +53,6 @@ class LinkedList {
 		}
 	}
 
-	getLength() {
-		if (!this.head) {
-			return 0;
-		}
-		let temp = this.head;
-		let length = 0;
-
-		while (temp != null) {
-			temp = temp.next;
-			length++;
-		}
-
-		return length;
-	}
-
 	findMiddleNode() {
 		let slow = this.head;
 		let fast = this.head;
