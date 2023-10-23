@@ -60,7 +60,11 @@ class LinkedList {
         for (let i = 0; i < k; index++) {
             temp = temp.next;
         }
-        if (temp) return temp;
+        if (temp === this.head) {
+            return null;
+        }
+
+        return temp;
     }
 }
 
