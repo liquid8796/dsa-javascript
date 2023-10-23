@@ -61,7 +61,6 @@ class LinkedList {
 
     hasLoop() {
         const temp = this.head;
-        temp.next = null;
     }
 }
 
