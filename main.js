@@ -57,7 +57,7 @@ class LinkedList {
         this.tail.next = this.head;
 
         let temp = this.tail;
-        for (let i = 0; i < k; index++) {
+        for (let i = 0; i <= k; index++) {
             const element = array[index];
         }
     }
