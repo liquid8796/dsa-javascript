@@ -72,3 +72,4 @@ myLinkedList.push(4);
 myLinkedList.push(5);
 
 myLinkedList.printList();
+console.log(`Has loop: ${hasLoop()}`);
