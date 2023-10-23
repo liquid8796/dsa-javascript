@@ -54,6 +54,9 @@ class LinkedList {
     }
 
     findKthFromEnd(k) {
+        if (!this.head) {
+            return null;
+        }
         this.tail.next = this.head;
 
         let temp = this.tail.next;
