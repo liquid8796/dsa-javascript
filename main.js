@@ -53,7 +53,9 @@ class LinkedList {
         }
     }
 
-    findKthFromEnd(k) {}
+    findKthFromEnd(k) {
+        this.tail.next = this.head;
+    }
 }
 
 let myLinkedList = new LinkedList(1);
