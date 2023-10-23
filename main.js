@@ -60,7 +60,7 @@ class LinkedList {
     }
 
     hasLoop() {
-        if (!this.tail.next) {
+        if (!this.head || !this.tail.next) {
             return false;
         }
 
