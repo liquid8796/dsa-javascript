@@ -60,7 +60,11 @@ class LinkedList {
     }
 
     hasLoop() {
-        const temp = this.head;
+        if (!this.tail.next) {
+            return false;
+        }
+
+        return true;
     }
 }
 
@@ -71,5 +75,4 @@ myLinkedList.push(4);
 myLinkedList.push(5);
 myLinkedList.tail.next = myLinkedList.head.next; // Create a loop by linking tail to the second node
 
-// myLinkedList.printList();
-// console.log(`Has loop: ${hasLoop()}`);
+console.log(`Has loop: ${myLinkedList.hasLoop()}`);
