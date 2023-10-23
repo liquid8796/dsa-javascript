@@ -58,8 +58,10 @@ class LinkedList {
 
         let temp = this.tail;
         for (let i = 0; i <= k; index++) {
-            const element = array[index];
+            temp = temp.next;
         }
+
+        return temp;
     }
 }
 
