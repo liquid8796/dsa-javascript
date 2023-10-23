@@ -64,3 +64,11 @@ class LinkedList {
         temp.next = null;
     }
 }
+
+let myLinkedList = new LinkedList(1);
+myLinkedList.push(2);
+myLinkedList.push(3);
+myLinkedList.push(4);
+myLinkedList.push(5);
+
+myLinkedList.printList();
