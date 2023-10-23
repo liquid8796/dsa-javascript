@@ -73,6 +73,6 @@ myLinkedList.push(2);
 myLinkedList.push(3);
 myLinkedList.push(4);
 myLinkedList.push(5);
-myLinkedList.tail.next = myLinkedList.head.next; // Create a loop by linking tail to the second node
+// myLinkedList.tail.next = myLinkedList.head.next;
 
 console.log(`Has loop: ${myLinkedList.hasLoop()}`);
