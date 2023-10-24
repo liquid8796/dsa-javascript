@@ -57,8 +57,8 @@ class LinkedList {
 		let slow = this.head;
 		let fast = this.head;
 
-		for (let i = 0; i < k; index++) {
-			const element = array[index];
+		for (let i = 0; i < k; i++) {
+			fast = fast.next;
 		}
 	}
 }
