@@ -51,12 +51,9 @@ class LinkedList {
 		this.length++;
 	}
 
-	// WRITE THE PARTITIONLIST METHOD HERE //
-	//                                     //
-	//                                     //
-	//                                     //
-	//                                     //
-	/////////////////////////////////////////
+	partitionList(x) {
+		let temp = this.head;
+	}
 }
 
 let myLinkedList = new LinkedList(3);
