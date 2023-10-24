@@ -83,7 +83,7 @@ myLinkedList.push(5);
 console.log('Original list:');
 myLinkedList.printList();
 
-const k = 4;
+const k = 5;
 const kthNodeFromEnd = myLinkedList.findKthFromEnd(k);
 
 console.log(`\n${k}th node from the end:`);
