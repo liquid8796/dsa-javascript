@@ -1,3 +1,3 @@
 arr = [1, 3, 5];
-sum = arr.reduce((accumulator, currentValue) => accumulator + currentValue);
+sum = arr.reduce((previous, current) => previous + current);
 console.log(sum);
