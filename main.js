@@ -53,6 +53,8 @@ class LinkedList {
 
 	partitionList(x) {
 		let temp = this.head;
+
+        
 	}
 }
 
