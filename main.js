@@ -4,5 +4,5 @@ const arr2 = [
 	[2, [3, [4, 5]]],
 ];
 
-const result = arr2.flat();
+const result = arr2.flat(3);
 console.log(result);
