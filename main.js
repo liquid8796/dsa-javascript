@@ -1,3 +1,4 @@
-arr = [1, 3, 5];
-max = arr.reduce((previous, current) => (previous < current ? current : previous));
-console.log(`max = ${max}`);
+arr1 = [0, 1, 2, [3, 4]];
+arr2 = [0, 1, [2, [3, [4, 5]]]];
+
+result = arr1.flat();
