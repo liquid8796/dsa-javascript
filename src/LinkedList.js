@@ -170,10 +170,10 @@ class LinkedList {
 		let fast = mid.next;
 		let slow = null;
 		for (let i = 0; i < this.length; i++) {
+			fast = mid.next;
 			mid.next = slow;
 			slow = mid;
 			mid = fast;
-			fast = fast.next;
 		}
 	}
 }
