@@ -172,8 +172,8 @@ class LinkedList {
 		for (let i = 0; i < this.length; i++) {
 			mid.next = slow;
 			slow = mid;
-			fast.next = mid;
 			mid = fast;
+			fast = fast.next;
 		}
 	}
 }
