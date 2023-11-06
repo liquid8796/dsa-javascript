@@ -170,6 +170,7 @@ class LinkedList {
 		console.log('mid = ', mid);
 		this.head = this.tail;
 		console.log('head = ', this.head);
+		console.log('mid = ', mid);
 		this.tail = mid;
 		console.log('tail = ', this.tail);
 		let fast = mid.next;
