@@ -167,7 +167,7 @@ class LinkedList {
 
 	reverse() {
 		let mid = this.head;
-		console.log(mid);
+		console.log('mid = ', mid);
 		this.head = this.tail;
 		console.log(`head = ${this.head}`);
 		this.tail = mid;
