@@ -165,7 +165,12 @@ class LinkedList {
 	// 	}
 	// }
 
-	reverse() {}
+	reverse() {
+		let temp = this.head;
+		let current = this.head.next;
+		let prev = null;
+		for (let i = 0; i < this.length; i++) {}
+	}
 }
 
 let myLinkedList = new LinkedList(11);
