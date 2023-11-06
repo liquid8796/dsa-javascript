@@ -167,7 +167,7 @@ class LinkedList {
 
 	reverse() {
 		let mid = this.head;
-		let fast = this.head.next;
+		let fast = mid.next;
 		let slow = null;
 		for (let i = 0; i < this.length; i++) {
 			mid.next = slow;
