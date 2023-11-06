@@ -169,7 +169,7 @@ class LinkedList {
 		let mid = this.head;
 		console.log('mid = ', mid);
 		this.head = this.tail;
-		console.log(`head = ${this.head}`);
+		console.log('head = ', this.head);
 		this.tail = mid;
 		console.log(`tail = ${this.tail}`);
 		let fast = mid.next;
