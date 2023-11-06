@@ -184,4 +184,4 @@ myLinkedList.push(23);
 myLinkedList.push(7);
 myLinkedList.reverse();
 
-console.log(myLinkedList);
+console.log(myLinkedList.get(0));
