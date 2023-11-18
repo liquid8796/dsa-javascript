@@ -1,5 +1,5 @@
 const arr = [1, 3, 2];
 const result = [];
-result.push(...arr);
+arr.reduce((prev, current) => prev + current);
 
-console.log(result);
+console.log(arr);
