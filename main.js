@@ -4,4 +4,4 @@ b.forEach((el) => {
     a.indexOf(el) !== -1 && a.splice(a.indexOf(el), 1);
 });
 
-console.log(result);
+console.log(a);
