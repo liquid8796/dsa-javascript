@@ -158,10 +158,10 @@ class LinkedList {
         let prev = null;
 
         while (next !== null) {
+            next = tmp.next;
             tmp.next = prev;
             prev = tmp;
             tmp = next;
-            next = tmp.next;
         }
     }
 }
