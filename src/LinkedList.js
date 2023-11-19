@@ -150,7 +150,39 @@ class LinkedList {
         return temp;
     }
 
-    reverse() {}
+    // reverse() {
+    // 	let temp = this.head;
+    // 	this.head = this.tail;
+    // 	this.tail = temp;
+    // 	let next = temp.next;
+    // 	let prev = null;
+
+    // 	for (let i = 0; i < this.length; i++) {
+    // 		next = temp.next;
+    // 		temp.next = prev;
+    // 		prev = temp;
+    // 		temp = next;
+    // 	}
+    // }
+
+    reverse() {
+        let mid = this.head;
+        console.log("mid = ", mid);
+        this.head = this.tail;
+        console.log("head = ", this.head);
+        this.tail = mid;
+        console.log("tail = ", this.tail);
+        let fast = mid.next;
+        console.log("fast = ", fast);
+        let slow = null;
+
+        for (let i = 0; i < this.length; i++) {
+            fast = mid.next;
+            mid.next = slow;
+            slow = mid;
+            mid = fast;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(11);
