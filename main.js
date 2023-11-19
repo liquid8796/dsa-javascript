@@ -1,3 +1,3 @@
 const eval = 2;
 
-console.log(eval);
+// \u{1F600}
