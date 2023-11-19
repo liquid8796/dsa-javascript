@@ -1,3 +1,3 @@
-const arguments = 1;
+const eval = 1;
 
-console.log(arguments);
+console.log(eval);
