@@ -150,9 +150,7 @@ class LinkedList {
         return temp;
     }
 
-    // reverse() {
-
-    // }
+    reverse() {}
 }
 
 let myLinkedList = new LinkedList(11);
