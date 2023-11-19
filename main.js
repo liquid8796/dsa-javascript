@@ -1,3 +1,3 @@
-var let = 1;
+const arguments = 1;
 
-console.log(let);
+console.log(arguments);
