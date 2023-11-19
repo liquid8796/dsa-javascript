@@ -1,3 +1,3 @@
 const eval = 2;
 
-// \u{1F600}
+console.log("\u{1F600}");
