@@ -155,7 +155,12 @@ class LinkedList {
         let next = this.head.next;
         let prev = null;
 
-        while(next !== null)
+        while (next !== null) {
+            tmp.next = prev;
+            prev = tmp;
+            tmp = next;
+            next = next.next;
+        }
     }
 }
 
