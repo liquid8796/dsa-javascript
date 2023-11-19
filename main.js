@@ -150,7 +150,13 @@ class LinkedList {
         return temp;
     }
 
-    reverse() {}
+    reverse() {
+        let tmp = this.head;
+        let next = this.head.next;
+        let prev = null;
+
+        while(next !== null)
+    }
 }
 
 let myLinkedList = new LinkedList(11);
