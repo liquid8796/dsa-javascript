@@ -152,7 +152,7 @@ class LinkedList {
 
     reverse() {
         let tmp = this.head;
-        this.head = this.tail;
+        this.tail = this.head;
         this.tail = tmp;
         let next = this.head.next;
         let prev = null;
