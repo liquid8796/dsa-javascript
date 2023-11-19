@@ -1,6 +1,3 @@
-class Node {
-    value;
-    next;
-}
+var let = 1;
 
-console.log(Object.getOwnPropertyNames(new Node()));
+console.log(let);
