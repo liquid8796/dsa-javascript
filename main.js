@@ -161,7 +161,7 @@ class LinkedList {
             tmp.next = prev;
             prev = tmp;
             tmp = next;
-            next = next.next;
+            next = tmp.next;
         }
     }
 }
