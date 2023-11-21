@@ -76,9 +76,9 @@ class LinkedList {
 
 let myLinkedList = new LinkedList(1);
 myLinkedList.push(2);
-myLinkedList.push(3);
-myLinkedList.push(4);
-myLinkedList.push(5);
+// myLinkedList.push(3);
+// myLinkedList.push(4);
+// myLinkedList.push(5);
 
 console.log("Original list:");
 myLinkedList.printList();
