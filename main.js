@@ -62,7 +62,7 @@ class LinkedList {
             slow = slow.next;
         }
 
-        while (fast) {
+        while (fast !== null) {
             fast = fast.next.next;
             slow = slow.next;
         }
