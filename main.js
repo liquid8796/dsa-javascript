@@ -57,7 +57,7 @@ class LinkedList {
         let slow = this.head;
         let fast = this.head;
 
-        while (fast.next) {
+        while (fast && fast.next) {
             fast = fast.next.next;
             slow = slow.next;
         }
