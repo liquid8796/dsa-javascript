@@ -53,7 +53,15 @@ class LinkedList {
         }
     }
 
-    findMiddleNode() {}
+    findMiddleNode() {
+        let slow = this.head;
+        let fast = this.head;
+
+        while (fast.next) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(1);
@@ -66,7 +74,8 @@ console.log("Original list:");
 myLinkedList.printList();
 
 const middleNode = myLinkedList.findMiddleNode();
-console.log(`\nMiddle node value: ${middleNode.value}`);1
+console.log(`\nMiddle node value: ${middleNode.value}`);
+1;
 
 // Create a new list with an even number of elements
 let myLinkedList2 = new LinkedList(1);
