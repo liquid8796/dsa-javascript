@@ -54,7 +54,13 @@ class LinkedList {
     }
 
     findKthFromEnd(k) {
-        
+        let slow = this.head;
+        let fast = this.head;
+
+        for (let i = 0; i < k; i++) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
     }
 }
 
