@@ -58,8 +58,11 @@ class LinkedList {
         let fast = this.head;
 
         for (let i = 0; i < k; i++) {
-            fast = fast.next.next;
-            slow = slow.next;
+            if (!fast) {
+                return null;
+            }
+
+            fast = fast.next;
         }
 
         while (fast !== null) {
