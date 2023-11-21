@@ -66,7 +66,7 @@ console.log("Original list:");
 myLinkedList.printList();
 
 const middleNode = myLinkedList.findMiddleNode();
-console.log(`\nMiddle node value: ${middleNode.value}`);
+console.log(`\nMiddle node value: ${middleNode.value}`);1
 
 // Create a new list with an even number of elements
 let myLinkedList2 = new LinkedList(1);
