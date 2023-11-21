@@ -9,8 +9,7 @@ class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
         this.head = newNode;
-        this.tail = newNode;
-        this.length = 1;
+        this.tail = this.head;
     }
 
     printList() {
@@ -37,10 +36,6 @@ class LinkedList {
         }
     }
 
-    getLength() {
-        console.log("Length: " + this.length);
-    }
-
     makeEmpty() {
         this.head = null;
         this.tail = null;
@@ -56,28 +51,9 @@ class LinkedList {
             this.tail.next = newNode;
             this.tail = newNode;
         }
-        this.length++;
     }
 
-    hasLoop() {
-        if (!this.head) {
-            return false;
-        }
-
-        let fast = this.head;
-        let slow = this.head;
-
-        while (fast && fast.next) {
-            fast = fast.next.next;
-            slow = slow.next;
-
-            if (fast === slow) {
-                return true;
-            }
-        }
-
-        return false;
-    }
+    findKthFromEnd(k) {}
 }
 
 let myLinkedList = new LinkedList(1);
@@ -89,14 +65,15 @@ myLinkedList.push(5);
 console.log("Original list:");
 myLinkedList.printList();
 
-const hasLoopResult = myLinkedList.hasLoop();
-console.log(`\nHas loop? ${hasLoopResult}`);
+const k = 2;
+const kthNodeFromEnd = myLinkedList.findKthFromEnd(k);
 
-// Create a loop for testing purposes
-myLinkedList.tail.next = myLinkedList.head.next; // Create a loop by linking tail to the second node
-
-const hasLoopResultAfterLoop = myLinkedList.hasLoop();
-console.log(`\nHas loop after creating a loop? ${hasLoopResultAfterLoop}`);
+console.log(`\n${k}th node from the end:`);
+if (kthNodeFromEnd) {
+    console.log(kthNodeFromEnd.value);
+} else {
+    console.log("Not found");
+}
 
 /*
     EXPECTED OUTPUT:
@@ -107,6 +84,6 @@ console.log(`\nHas loop after creating a loop? ${hasLoopResultAfterLoop}`);
     3
     4
     5
-    Has loop? false
-    Has loop after creating a loop? true
+    2th node from the end:
+    4
 */
