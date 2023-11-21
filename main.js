@@ -66,6 +66,8 @@ class LinkedList {
             fast = fast.next.next;
             slow = slow.next;
         }
+
+        return slow;
     }
 }
 
