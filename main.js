@@ -60,6 +60,10 @@ class LinkedList {
     }
 
     hasLoop() {
+        if (!this.head) {
+            return false;
+        }
+
         let fast = this.head;
         let slow = this.head;
 
