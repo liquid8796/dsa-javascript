@@ -67,7 +67,7 @@ class LinkedList {
 
         for (let i = 0; i < this.length; i++) {
             if (current < x) {
-                dummy1.next = current;
+                dummy1.next = temp;
             }
             temp = temp.next;
         }
