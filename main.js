@@ -60,6 +60,13 @@ class LinkedList {
         this.length++;
     }
 
+    partitionList(x) {
+        let dummy1 = null;
+        let dummy2 = null;
+
+        for (let i = 0; i < this.length; i++) {}
+    }
+
     //   +===================================================+
     //   |                  WRITE YOUR CODE HERE             |
     //   | Description:                                      |
