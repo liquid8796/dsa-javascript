@@ -69,6 +69,7 @@ class LinkedList {
             if (current < x) {
                 dummy1.next = current;
             }
+            temp = temp.next;
         }
     }
 
