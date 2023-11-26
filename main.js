@@ -63,9 +63,9 @@ class LinkedList {
     partitionList(x) {
         let dummy1 = null;
         let dummy2 = null;
+        const temp = this.head;
 
         for (let i = 0; i < this.length; i++) {
-            const current = this.head;
             if (current < x) {
                 dummy1.next = current;
             }
