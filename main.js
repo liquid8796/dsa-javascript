@@ -64,7 +64,12 @@ class LinkedList {
         let dummy1 = null;
         let dummy2 = null;
 
-        for (let i = 0; i < this.length; i++) {}
+        for (let i = 0; i < this.length; i++) {
+            const current = this.head;
+            if (current < x) {
+                dummy1.next = current;
+            }
+        }
     }
 
     //   +===================================================+
