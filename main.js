@@ -60,6 +60,9 @@ class LinkedList {
         this.length++;
     }
 
+    //1 -> 4 -> 3 -> 2 -> 5 -> 2
+    //
+
     partitionList(x) {
         let dummy1 = null;
         let dummy2 = null;
