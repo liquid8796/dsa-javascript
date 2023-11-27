@@ -66,7 +66,7 @@ class LinkedList {
         const temp = this.head;
 
         for (let i = 0; i < this.length; i++) {
-            if (current < x) {
+            if (temp.value < x) {
                 dummy1.next = temp;
             } else {
                 dummy2.next = temp;
