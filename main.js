@@ -51,12 +51,7 @@ class LinkedList {
         this.length++;
     }
 
-    // WRITE THE REMOVEDUPLICATES METHOD HERE //
-    //                                        //
-    //                                        //
-    //                                        //
-    //                                        //
-    ////////////////////////////////////////////
+    removeDuplicates() {}
 }
 
 let myLinkedList = new LinkedList(1);
