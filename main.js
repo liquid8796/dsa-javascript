@@ -52,7 +52,13 @@ class LinkedList {
         this.length++;
     }
 
-    removeDuplicates() {}
+    removeDuplicates() {
+        let temp = this.head;
+
+        while (temp) {
+            temp = temp.next;
+        }
+    }
 }
 
 let myLinkedList = new LinkedList(1);
