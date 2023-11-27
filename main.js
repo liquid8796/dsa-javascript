@@ -56,6 +56,11 @@ class LinkedList {
         let temp = this.head;
 
         while (temp) {
+            let cursor = temp.next;
+            while (cursor) {
+                cursor = cursor.next;
+            }
+
             temp = temp.next;
         }
     }
