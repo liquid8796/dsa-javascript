@@ -89,7 +89,9 @@ class LinkedList {
         }
 
         prev2.next = null;
-        prev1.next = prev2.next;
+        prev1.next = dummy2.next;
+
+        this.head = dummy1.next;
     }
 
     //   +===================================================+
