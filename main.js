@@ -54,6 +54,9 @@ class LinkedList {
 
     removeDuplicates() {
         let temp = this.head;
+        const arr = new Set([]);
+
+        while (temp) {}
 
         while (temp) {
             let cursor = temp.next;
