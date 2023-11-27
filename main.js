@@ -5,4 +5,4 @@ const b = new Map([
     [4, "four"],
 ]);
 
-console.log(b);
+console.log(b.entries());
