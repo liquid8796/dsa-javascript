@@ -5,4 +5,4 @@ const b = new Map([
     [4, "four"],
 ]);
 
-console.log(a);
+console.log(a.union(b));
