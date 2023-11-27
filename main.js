@@ -64,18 +64,10 @@ class LinkedList {
     //
 
     partitionList(x) {
-        let dummy1 = null;
-        let dummy2 = null;
-        const temp = this.head;
+        if (this.head === null) return;
 
-        while (temp) {
-            if (temp.value < x) {
-                dummy1.next = temp;
-            } else {
-                dummy2.next = temp;
-            }
-            temp = temp.next;
-        }
+        const dummy1 = new Node(0);
+        const dummy2 = new Node(0);
     }
 
     //   +===================================================+
