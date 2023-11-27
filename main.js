@@ -80,7 +80,9 @@ class LinkedList {
                 console.log(`prev1b = ${prev1}`);
             } else {
                 prev2.next = current;
+                console.log(`prev2 = ${prev2}`);
                 prev2 = current;
+                console.log(`prev2b = ${prev2}`);
             }
 
             current = current.next;
