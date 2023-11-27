@@ -85,11 +85,11 @@ class LinkedList {
                 console.log(`prev2b = ${prev2}`);
             }
 
-            prev2.next = null;
-            prev1.next = prev2.next;
-
             current = current.next;
         }
+
+        prev2.next = null;
+        prev1.next = prev2.next;
     }
 
     //   +===================================================+
