@@ -53,16 +53,12 @@ class LinkedList {
     }
 
     removeDuplicates() {
-        const values = new Set([]);
+        const values = new Set();
         let previous = null;
         let current = this.head;
 
         while (temp) {
             arr.add(temp.value);
-            temp = temp.next;
-        }
-
-        while (temp) {
             temp = temp.next;
         }
     }
