@@ -48,6 +48,7 @@ class LinkedList {
             }
             current.next = newNode;
         }
+
         this.length++;
     }
 
