@@ -75,6 +75,7 @@ class LinkedList {
         while (current) {
             if (current.value < x) {
                 prev1.next = current;
+                prev1 = current;
             }
         }
     }
