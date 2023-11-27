@@ -70,6 +70,13 @@ class LinkedList {
         const dummy2 = new Node(0);
         let prev1 = dummy1;
         let prev2 = dummy2;
+        let current = this.head;
+
+        while (current) {
+            if (current.value < x) {
+                prev1.next = current;
+            }
+        }
     }
 
     //   +===================================================+
