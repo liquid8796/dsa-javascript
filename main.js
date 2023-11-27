@@ -76,7 +76,10 @@ class LinkedList {
             if (current.value < x) {
                 prev1.next = current;
                 prev1 = current;
+            } else {
             }
+
+            current = current.next;
         }
     }
 
