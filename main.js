@@ -75,8 +75,9 @@ class LinkedList {
         while (current) {
             if (current.value < x) {
                 prev1.next = current;
+                console.log(`prev1 = ${prev1}`);
                 prev1 = current;
-            } else {
+                console.log(`prev1 = ${prev1}`);
             }
 
             current = current.next;
