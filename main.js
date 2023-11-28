@@ -59,6 +59,8 @@ class LinkedList {
 
         while (current) {
             if (values.has(current.value)) {
+                prev.next = current.next;
+                this.length -= 1;
             } else {
                 values.add(current.value);
                 prev = current;
