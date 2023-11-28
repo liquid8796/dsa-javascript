@@ -57,9 +57,14 @@ class LinkedList {
         let prev = null;
         let current = this.head;
 
-        while (temp) {
+        while (current) {
             if (values.has(current.value)) {
+            } else {
+                values.add(current.value);
+                prev = current;
             }
+
+            current = current.next;
         }
     }
 }
