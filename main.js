@@ -54,7 +54,7 @@ class LinkedList {
 
     removeDuplicates() {
         const values = new Set();
-        let previous = null;
+        let prev = null;
         let current = this.head;
 
         while (temp) {
