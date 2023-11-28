@@ -166,10 +166,9 @@ class LinkedList {
     }
 }
 
-let myLinkedList = new LinkedList(11);
-myLinkedList.push(3);
-myLinkedList.push(23);
-myLinkedList.push(7);
-myLinkedList.reverse();
+let myLinkedList = new LinkedList(1);
+myLinkedList.push(0);
+myLinkedList.push(1);
+myLinkedList.push(1);
 
 console.log(myLinkedList);
