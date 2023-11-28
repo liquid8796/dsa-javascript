@@ -58,8 +58,8 @@ class LinkedList {
         let current = this.head;
 
         while (temp) {
-            arr.add(temp.value);
-            temp = temp.next;
+            if (values.has(current.value)) {
+            }
         }
     }
 }
