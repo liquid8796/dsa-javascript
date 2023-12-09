@@ -1,10 +1,10 @@
 class Node {
-    constructor(value){
+    constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
- 
+
 class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
@@ -45,32 +45,26 @@ class LinkedList {
         this.head = null;
         this.length = 0;
     }
- 
-	push(value) {
-		const newNode = new Node(value);
-		if (!this.head) {
-			this.head = newNode;
-		} else {
-			let current = this.head;
-			while (current.next !== null) {
-				current = current.next;
-			}
-			current.next = newNode;
-		}
-		this.length++;
-	}
-	
-    binaryToDecimal(){
-        let num = 0;
-        let i =  0;
-        
 
+    push(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode;
+        } else {
+            let current = this.head;
+            while (current.next !== null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+        this.length++;
+    }
+
+    binaryToDecimal() {
+        let num = 0;
+        let i = 0;
     }
 }
-
-
-
-
 
 // ---------------
 // Convert 1011 to 11
@@ -114,5 +108,3 @@ console.log("Convert empty list to 0:");
 console.log("Input: empty");
 console.log("Output: ", list4.binaryToDecimal());
 console.log("---------------");
-
-
