@@ -70,6 +70,8 @@ class LinkedList {
             i++;
             temp = temp.next;
         }
+
+        return num;
     }
 }
 
