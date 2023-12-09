@@ -67,6 +67,8 @@ class LinkedList {
 
         while (temp) {
             num += temp.value ** i;
+            i++;
+            temp = temp.next;
         }
     }
 }
