@@ -62,6 +62,9 @@ class LinkedList {
 	
     binaryToDecimal(){
         let num = 0;
+        let i =  0;
+        
+
     }
 }
 
