@@ -66,7 +66,7 @@ class LinkedList {
         let temp = this.head;
 
         while (temp) {
-            num += temp.value ** i;
+            num = i * 2 + temp.value;
             i++;
             temp = temp.next;
         }
