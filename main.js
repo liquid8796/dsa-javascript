@@ -1,157 +1,128 @@
 class Node {
-    constructor(value) {
+    constructor(value){
         this.value = value;
         this.next = null;
     }
 }
-
+ 
 class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
         this.head = newNode;
-        this.tail = this.head;
         this.length = 1;
     }
 
-    push(value) {
-        const newNode = new Node(value);
-
-        if (!this.head) {
-            this.head = newNode;
-            this.tail = newNode;
-        } else {
-            this.tail.next = newNode;
-            this.tail = newNode;
-        }
-        this.length++;
-
-        return this;
-    }
-
-    pop() {
-        if (!this.head) {
-            return undefined;
-        }
-
+    printList() {
         let temp = this.head;
-        let pre = this.head;
-
-        while (temp.next) {
-            pre = temp;
+        let output = "";
+        if (temp === null) {
+            console.log("empty");
+            return;
+        }
+        while (temp !== null) {
+            output += String(temp.value);
             temp = temp.next;
-        }
-
-        this.tail = pre;
-        this.tail.next = null;
-        this.length--;
-
-        if (this.length === 0) {
-            this.head = null;
-            this.tail = null;
-        }
-
-        return temp;
-    }
-
-    unshift(value) {
-        const newNode = new Node(value);
-
-        if (!this.head) {
-            this.head = newNode;
-            this.tail = newNode;
-        } else {
-            newNode.next = this.head;
-            this.head = newNode;
-        }
-        this.length++;
-    }
-
-    partitionList(x) {
-        let dummy1 = null;
-        let dummy2 = null;
-        const temp = this.head;
-
-        for (let i = 0; i < this.length; i++) {
-            if (current < x) {
-                dummy1.next = temp;
+            if (temp !== null) {
+                output += " -> ";
             }
-            temp = temp.next;
         }
-
-        return temp;
+        console.log(output);
     }
 
-    set(index, value) {
-        let temp = this.get(index);
-
-        if (temp) {
-            temp.value = value;
-            return true;
-        }
-
-        return false;
-    }
-
-    insert(index, value) {
-        if (index === 0) {
-            return this.unshift(value);
-        }
-        if (index === this.length) {
-            return this.push(value);
-        }
-        if (index < 0 || index > this.length) {
-            return false;
-        }
-
-        const newNode = new Node(value);
-        const temp = this.get(index - 1);
-
-        newNode.next = temp.next;
-        temp.next = newNode;
-        this.length++;
-
-        return true;
-    }
-
-    remove(index) {
-        if (index === 0) {
-            return this.shift();
-        }
-        if (index === this.length - 1) {
-            return this.pop();
-        }
-        if (index < 0 || index >= this.length) {
-            return undefined;
-        }
-
-        const before = this.get(index - 1);
-        const temp = before.next;
-        before.next = temp.next;
-        temp.next = null;
-        this.length--;
-
-        return temp;
-    }
-
-    reverse() {
-        let temp = this.head;
-        this.head = this.tail;
-        this.tail = temp;
-        let next = temp.next;
-        let prev = null;
-
-        for (let i = 0; i < this.length; i++) {
-            next = temp.next;
-            temp.next = prev;
-            prev = temp;
-            temp = next;
+    getHead() {
+        if (this.head === null) {
+            console.log("Head: null");
+        } else {
+            console.log("Head: " + this.head.value);
         }
     }
+
+    getLength() {
+        console.log("Length: " + this.length);
+    }
+
+    makeEmpty() {
+        this.head = null;
+        this.length = 0;
+    }
+ 
+	push(value) {
+		const newNode = new Node(value);
+		if (!this.head) {
+			this.head = newNode;
+		} else {
+			let current = this.head;
+			while (current.next !== null) {
+				current = current.next;
+			}
+			current.next = newNode;
+		}
+		this.length++;
+	}
+	
+    //   +===================================================+
+    //   |               WRITE YOUR CODE HERE                |
+    //   | Description:                                      |
+    //   | - This method converts a binary number,           |
+    //   |   represented as a linked list, to a decimal int. |
+    //   |                                                   |
+    //   | Return type: int                                  |
+    //   | - Returns the decimal equivalent of the binary    |
+    //   |   number.                                         |
+    //   |                                                   |
+    //   | Tips:                                             |
+    //   | - We use a while loop to traverse the linked list.|
+    //   | - Multiply the current sum by 2 and add the value |
+    //   |   at each node to get the decimal number.         |
+    //   +===================================================+
+	
 }
 
-let myLinkedList = new LinkedList(1);
-myLinkedList.push(0);
-myLinkedList.push(1);
-myLinkedList.push(1);
 
-console.log(myLinkedList);
+
+
+
+// ---------------
+// Convert 1011 to 11
+// ---------------
+const list1 = new LinkedList(1);
+list1.push(0);
+list1.push(1);
+list1.push(1);
+console.log("Convert 1011 to 11:");
+console.log("Input: 1 -> 0 -> 1 -> 1");
+console.log("Output: ", list1.binaryToDecimal());
+console.log("---------------");
+
+// ---------------
+// Convert 1100 to 12
+// ---------------
+const list2 = new LinkedList(1);
+list2.push(1);
+list2.push(0);
+list2.push(0);
+console.log("Convert 1100 to 12:");
+console.log("Input: 1 -> 1 -> 0 -> 0");
+console.log("Output: ", list2.binaryToDecimal());
+console.log("---------------");
+
+// ---------------
+// Convert 1 to 1
+// ---------------
+const list3 = new LinkedList(1);
+console.log("Convert 1 to 1:");
+console.log("Input: 1");
+console.log("Output: ", list3.binaryToDecimal());
+console.log("---------------");
+
+// ---------------
+// Convert empty list to 0
+// ---------------
+const list4 = new LinkedList(0);
+list4.makeEmpty();
+console.log("Convert empty list to 0:");
+console.log("Input: empty");
+console.log("Output: ", list4.binaryToDecimal());
+console.log("---------------");
+
+
