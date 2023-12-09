@@ -63,6 +63,11 @@ class LinkedList {
     binaryToDecimal() {
         let num = 0;
         let i = 0;
+        let temp = this.head;
+
+        while (temp) {
+            num += temp.value ** i;
+        }
     }
 }
 
