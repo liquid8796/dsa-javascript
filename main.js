@@ -1,2 +1,2 @@
 let str = "Good to see you!";
-console.log(str.slice(1, 5));
+console.log(str.slice(1, 6));
