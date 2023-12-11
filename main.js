@@ -1,2 +1,2 @@
 let str = "Good to see you!";
-console.log(str.substring(1));
+console.log(str.slice(1));
