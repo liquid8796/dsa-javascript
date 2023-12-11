@@ -1,10 +1,10 @@
 class Node {
-    constructor(value){
+    constructor(value) {
         this.value = value;
         this.next = null;
     }
 }
- 
+
 class LinkedList {
     constructor(value) {
         const newNode = new Node(value);
@@ -45,42 +45,33 @@ class LinkedList {
         this.head = null;
         this.length = 0;
     }
- 
-	push(value) {
-		const newNode = new Node(value);
-		if (!this.head) {
-			this.head = newNode;
-		} else {
-			let current = this.head;
-			while (current.next !== null) {
-				current = current.next;
-			}
-			current.next = newNode;
-		}
-		this.length++;
-	}
-	
-    //   +===================================================+
-    //   |               WRITE YOUR CODE HERE                |
-    //   | Description:                                      |
-    //   | - This method converts a binary number,           |
-    //   |   represented as a linked list, to a decimal int. |
-    //   |                                                   |
-    //   | Return type: int                                  |
-    //   | - Returns the decimal equivalent of the binary    |
-    //   |   number.                                         |
-    //   |                                                   |
-    //   | Tips:                                             |
-    //   | - We use a while loop to traverse the linked list.|
-    //   | - Multiply the current sum by 2 and add the value |
-    //   |   at each node to get the decimal number.         |
-    //   +===================================================+
-	
+
+    push(value) {
+        const newNode = new Node(value);
+        if (!this.head) {
+            this.head = newNode;
+        } else {
+            let current = this.head;
+            while (current.next !== null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+        this.length++;
+    }
+
+    binaryToDecimal() {
+        let num = 0;
+        let temp = this.head;
+
+        while (temp) {
+            num = num * 2 + temp.value;
+            temp = temp.next;
+        }
+
+        return num;
+    }
 }
-
-
-
-
 
 // ---------------
 // Convert 1011 to 11
@@ -124,5 +115,3 @@ console.log("Convert empty list to 0:");
 console.log("Input: empty");
 console.log("Output: ", list4.binaryToDecimal());
 console.log("---------------");
-
-
