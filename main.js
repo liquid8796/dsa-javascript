@@ -1,2 +1,2 @@
-const text = "Mozilla";
-console.log(text.substring(5, 2));
+let str = "tranlehanam";
+console.log(str.slice(4, 1));
