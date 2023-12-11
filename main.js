@@ -1,2 +1,2 @@
 let str = "tranlehanam";
-console.log(str.substring(4, 1));
+console.log(str.substring(-5, -2));
