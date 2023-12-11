@@ -1,2 +1,2 @@
 let str = "tranlehanam";
-console.log(str.slice(-5, 2));
+console.log(str.slice(-5, -2));
