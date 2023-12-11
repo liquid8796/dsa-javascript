@@ -1,2 +1,2 @@
-let str = "Good to see you!";
+let str = "tranlehanam";
 console.log(str.substring(4, 1));
