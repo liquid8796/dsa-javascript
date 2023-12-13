@@ -1,2 +1,2 @@
 let str = "tranlehanam";
-console.log(String.raw`\n`.length);
+console.log(String.raw`\n`);
