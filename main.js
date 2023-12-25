@@ -156,6 +156,7 @@ class LinkedList {
         const prevNode = null;
 
         while (currentNode.next) {
+            nextNode = currentNode.next;
             currentNode.next = prevNode;
             prevNode = currentNode;
         }
