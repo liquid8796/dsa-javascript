@@ -160,6 +160,7 @@ class LinkedList {
             nextNode = currentNode.next;
             currentNode.next = prevNode;
             prevNode = currentNode;
+            currentNode = nextNode;
         }
     }
 }
