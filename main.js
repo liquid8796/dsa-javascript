@@ -153,7 +153,7 @@ class LinkedList {
     reverse() {
         const currentNode = this.head;
         const nextNode = currentNode.next;
-        while (next) {}
+        while (nextNode) {}
     }
 }
 
