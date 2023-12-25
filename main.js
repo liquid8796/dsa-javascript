@@ -151,9 +151,9 @@ class LinkedList {
     }
 
     reverse() {
-        const currentNode = this.head;
-        const nextNode = currentNode.next;
-        const prevNode = null;
+        let currentNode = this.head;
+        let nextNode = currentNode.next;
+        let prevNode = null;
 
         while (currentNode.next) {
             nextNode = currentNode.next;
