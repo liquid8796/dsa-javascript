@@ -157,7 +157,7 @@ class LinkedList {
         let nextNode = currentNode.next;
         let prevNode = null;
 
-        while (currentNode.next) {
+        while (currentNode) {
             nextNode = currentNode.next;
             currentNode.next = prevNode;
             prevNode = currentNode;
