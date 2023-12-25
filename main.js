@@ -150,7 +150,10 @@ class LinkedList {
         return temp;
     }
 
-    reverse() {}
+    reverse() {
+        const current = this.head;
+        while (next) {}
+    }
 }
 
 let myLinkedList = new LinkedList(11);
