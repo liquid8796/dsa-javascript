@@ -180,4 +180,4 @@ myLinkedList.push(23);
 myLinkedList.push(7);
 myLinkedList.reverse();
 
-printList();
+myLinkedList.printList();
